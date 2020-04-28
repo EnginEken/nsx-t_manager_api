@@ -7,8 +7,8 @@ import time
 import requests
 import math
 
-api_url = 'https://nsxman.hepsiburada.com/policy/api/v1/infra/'
-api_url_fabric = 'https://nsxman.hepsiburada.com/api/v1/fabric/'
+api_url = 'https://your_nsx_manager(like nsxman.abcdef.com)/policy/api/v1/infra/'
+api_url_fabric = 'https://your_nsx_manager(like nsxman.abcdef.com)/api/v1/fabric/'
 
 request_headers = {"Authorization": config('auth_token'),
                    "Content-Type": "application/json",
@@ -41,7 +41,7 @@ tag_data = {
 connectivity_path_base = "/infra/tier-1s/"
 transport_zone_base = "/infra/sites/default/enforcement-points/default/transport-zones/"
 
-CHANNEL = "CV50KQYU9"  # "GUNJ6RQD8"
+CHANNEL = "xxxxxxx"  # Slack Channel ID
 MESSAGES_PER_PAGE = 1
 
 segment_names = []
